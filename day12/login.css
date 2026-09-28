@@ -1,0 +1,129 @@
+/* 1. 패딩과 테두리가 전체 크기에 포함되도록 설정 (필수) */
+* {
+  box-sizing: border-box;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  width: 450px; /* 카드 전체 너비 */
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  margin: 40px auto;
+  padding: 40px;
+}
+
+/* 2. 입력창 높이 및 크기 조절 */
+.text,
+.password {
+  width: 100%; /* 부모 요소 너비에 맞춤 (또는 원하는 px 값) */
+  height: 50px; /* 입력창 높이 (원하는 크기로 변경 가능) */
+  font-size: 16px; /* 글자 크기 */
+  padding: 0 16px; /* 내부 글자 왼쪽 여백 */
+  border: 1px solid red;
+  border-radius: 8px; /* 모서리 둥글게 */
+  outline: none;
+  margin-bottom: 8px;
+}
+
+/* 3. 체크박스 영역 가로 정렬 */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+/* 4. 로그인 버튼 */
+.loginBtn {
+  width: 100%;
+  height: 50px; /* 버튼 높이도 입력창과 동일하게 맞춤 */
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* 1. 패딩과 테두리가 전체 크기에 포함되도록 설정 (필수) */
+* {
+  box-sizing: border-box;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  width: 450px; /* 카드 전체 너비 */
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  margin: 40px auto;
+  padding: 40px;
+}
+
+/* 2. 입력창 높이 및 크기 조절 */
+.text,
+.password {
+  width: 100%; /* 부모 요소 너비에 맞춤 */
+  height: 50px; /* 입력창 높이 */
+  font-size: 16px; /* 글자 크기 */
+  padding: 0 16px; /* 내부 글자 왼쪽 여백 */
+  border: 1px solid #ccc; /* 기본 테두리는 회색으로 설정 */
+  border-radius: 8px; /* 모서리 둥글게 */
+  outline: none;
+}
+
+/* 3. 체크박스 영역 가로 정렬 */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+/*로그인 버튼 */
+.loginBtn {
+  width: 100%;
+  height: 50px; /* 버튼 높이도 입력창과 동일하게 맞춤 */
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* ㅈㄴ 모르겠는 부분*/
+
+/* 에러 메시지 텍스트 (평소에는 안 보임) */
+.error_msg {
+  color: red;
+  font-size: 13px;
+  margin-top: 6px;
+  margin-bottom: 8px;
+  display: none; /* 숨김 처리 */
+}
+
+/* JS로 active 클래스가 추가되면 메시지 표시 */
+.error_msg.active {
+  display: block;
+}
+
+/* JS로 input-error 클래스가 추가되면 테두리를 빨간색으로 변경 */
+.text.input_error,
+.password.input_error {
+  border: 1px solid red;
+}

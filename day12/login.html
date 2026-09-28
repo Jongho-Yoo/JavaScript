@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인</title>
+    <script src="login.js" defer></script>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="login">
+      <h1>로그인</h1>
+
+      <h4>이메일</h4>
+      <input
+        type="text"
+        id="email"
+        class="text"
+        placeholder="이메일을 입력하세요"
+      />
+      <span id="emailError" class="error-msg">골뱅이가 없어요</span>
+
+      <h4>비밀번호</h4>
+      <input
+        type="password"
+        id="password"
+        class="password"
+        placeholder="비밀번호"
+      />
+      <span id="passwordError" class="error-msg">8자 이상이어야 해요</span>
+
+      <div class="checkbox-container">
+        <input type="checkbox" class="checkbox" id="agree" />
+        <label for="agree">약관에 동의합니다.</label>
+      </div>
+      <span id="agreeError" class="error-msg">약관에 동의해 주세요</span>
+
+      <button type="button" id="loginBtn" class="loginBtn">로그인</button>
+    </div>
+  </body>
+</html>

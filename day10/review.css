@@ -1,0 +1,65 @@
+.deck {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 50px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  gap: 10px;
+  border: 1px solid black;
+}
+
+.album {
+  width: 100%;
+}
+
+.album > img {
+  width: 100%;
+}
+
+.card > .level {
+  font-size: 24px;
+}
+
+.card > .name {
+  font-size: 28px;
+}
+
+/* In Training, Rookie, Champion, Ultimate, Fresh, Mega, Training, Armor */
+
+.intraining {
+  color: red;
+}
+
+.rookie {
+  color: blue;
+}
+
+.champion {
+  color: green;
+}
+
+.ultimate {
+  color: yellow;
+}
+
+.fresh {
+  color: orange;
+}
+
+.mega {
+  color: pink;
+}
+
+.training {
+  color: lavender;
+}
+
+.armor {
+  color: tomato;
+}

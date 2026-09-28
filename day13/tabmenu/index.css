@@ -1,0 +1,21 @@
+.tabMenu {
+  border: 1px solid red;
+  padding: 8px;
+  background-color: white;
+  width: 500px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonList {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  border-bottom: 1px solid red;
+  padding-bottom: 5px;
+}
+
+.contents > p {
+  padding: 0 5px;
+}

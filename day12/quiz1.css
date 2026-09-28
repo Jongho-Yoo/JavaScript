@@ -1,0 +1,62 @@
+/* .dropdown {
+  position: relative; 
+  display: inline-block;
+}
+
+/* .dropdown-content {
+  display: none; 
+  position: absolute; 
+  background-color: #ffffff; 
+  border: 1px solid #ccc; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  border-radius: 4px; 
+  min-width: 120px; 
+  z-index: 10;
+} */
+
+/* .dropdown-content.show {
+  display: block; /
+} 
+
+/* 내부 링크(a태그) 간격 조절 */
+/* .dropdown-content a {
+  display: block;
+  padding: 10px 14px;
+  text-decoration: none;
+  color: #333;
+} */
+
+/* .dropdown-content a:hover {
+  background-color: #f1f1f1;
+} */
+
+.dropdown {
+  padding: 4px 8px;
+  background-color: transparent;
+  border: 1px solid #efefef;
+  border-radius: 8px;
+}
+.list {
+  border: 1px solid #efefef;
+  padding: 6px;
+  width: fit-content;
+}
+
+.noShow {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.list > li {
+  list-style-type: none;
+}
+
+#dropdown_chevron {
+  transition: all 0.5s;
+}
+.down {
+  transform: rotate(180deg);
+}

@@ -1,0 +1,33 @@
+.SeatsArray {
+  display: flex;
+  direction: row;
+}
+
+.SeatsAlpabet {
+}
+
+.SeatsNumber {
+}
+
+.Seats {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  margin: 2px;
+  text-align: center;
+  line-height: 30px;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+
+.Seats.clicked {
+  background-color: red;
+  color: white;
+}
+
+.Seats.disabled {
+  background-color: black;
+  color: white;
+  cursor: not-allowed;
+}
