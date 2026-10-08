@@ -1,0 +1,37 @@
+.menus {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.loading {
+  text-align: center;
+  font-size: 40px;
+}
+.items {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 50px;
+}
+
+.card {
+  border: 1px solid #efefef;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card > .album {
+  width: 100%;
+  height: 60%;
+}
+
+.card > .album > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.hidden {
+  display: none;
+}

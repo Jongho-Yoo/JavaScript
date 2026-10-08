@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>반응속도 테스트</title>
+    <link rel="stylesheet" href="turtle.css" />
+    <script src="turtle.js" defer></script>
+  </head>
+  <body>
+    <div class="card">
+      <div class="header">
+        <span class="title">거북이🐢 테스트</span>
+        <span class="max-record" id="max-record">최고 -</span>
+      </div>
+
+      <!-- 처음 상태: violet -->
+      <div id="screen" class="violet">
+        <div id="message" class="main-text">클릭해서 시작</div>
+        <div id="grade" class="grade"></div>
+        <div id="sub-message" class="sub-text">
+          빨강이 초록으로 바뀌는 순간 클릭
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
